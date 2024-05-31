@@ -1,0 +1,359 @@
+@font-face {
+    font-family: "Chaney-wide" ;
+    src: url(font/CHANEY-Wide.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Chaney-regular" ;
+    src: url(font/CHANEY-Regular.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Comfortaa-Regular" ;
+    src: url(font/Comfortaa-Regular.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: "Comfortaa-Light" ;
+    src: url(font/Comfortaa-Light.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: "Comfortaa-Bold" ;
+    src: url(font/Comfortaa-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Cooper" ;
+    src: url(font/COOPBL.TTF) format("truetype");
+}
+
+@font-face {
+    font-family: "Move" ;
+    src: url(font/MOVE\ GROOVY.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Bebas" ;
+    src: url(font/BebasNeue-Regular.ttf) format("truetype");
+}
+
+/* BARRE DE SCROLL */
+
+/* Largeur de la barre de défilement */
+::-webkit-scrollbar {
+    width: 7px; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Hauteur de la barre de défilement */
+::-webkit-scrollbar {
+    height: 7px; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Couleur de fond de la barre de défilement */
+::-webkit-scrollbar {
+    background-color: #101010; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Couleur de la piste (partie non défilante) de la barre de défilement */
+::-webkit-scrollbar-track {
+    background-color: #101010; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Couleur de la poignée (partie défilante) de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Arrondir les bords de la poignée de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Défilement en hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #909090; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+
+
+/* Styles généraux */
+body {
+    margin: 0;
+    background-color: #090909;
+}
+
+.parentligne{
+    display: flex;
+    flex-direction: column;
+}
+
+.ligne1{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.ligne2{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+}
+
+.ligne3{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+    align-items: center;
+}
+
+/* Styles de base pour le carrousel */
+.carousel {
+    width: 275px;
+    height: 275px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: -0px 0px 25px -10px white;
+    display: flex;
+    background-color: white;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 300%;
+    animation: slide 9s infinite;
+}
+
+.carousel-item {
+    width: 100%;
+    flex: 1 0 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    height: auto;
+    width: 275px;
+    border-radius: 10px;
+}
+
+/* Animation */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(0%); }
+    38% { transform: translateX(-100%); }
+    71% { transform: translateX(-100%); }
+    76% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+
+.carouselenfant{
+    display: flex;
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: Comfortaa-Regular ;
+    font-size: 13px;
+    flex-direction: column;
+    box-shadow: -0px 0px 25px -10px white;
+}
+
+.carouselenfant h1{
+    font-family: Chaney-Regular;
+}
+
+.carousellink{
+    display: flex;
+    width: 250px;
+    background-color: #F6E9D5;
+    border-radius: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: Chaney-Wide ;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center; 
+    color: #EDD3AB;
+    text-align: center;
+    box-shadow: -0px 0px 25px -10px white;
+}
+
+.carousellink a{
+    text-decoration: none;
+}
+
+.projet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.titlepage{
+    display: flex;
+    font-family: Chaney-Regular;
+    color: #292929;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.titlepage a{
+    text-decoration: none;
+    color: #292929;
+}
+
+.clickable-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 35px;
+    border-radius: 15px;
+    box-shadow: -0px 0px 25px -10px white;
+    margin-bottom: 50px;
+}
+
+.clickable-div:hover {
+    transform: scale(1.05);
+}
+
+.clickable-div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* ADAPTATION */
+
+
+
+@media (min-width: 1280px) {
+    .parentligne {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .ligne1 {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .ligne2 {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 0px;
+    }
+
+    .ligne3 {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+
+
+
+    .carousel {
+        width: 265px;
+        height: 265px;
+        margin: auto;
+        overflow: hidden;
+        border: 2px solid #ddd;
+        border-radius: 15px;
+        box-shadow: -0px 0px 25px -10px white;
+        display: flex;
+        background-color: white;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        width: 300%;
+        animation: slide 9s infinite;
+    }
+    
+    .carousel-item {
+        width: 100%;
+        flex: 1 0 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item img {
+        height: auto;
+        width: 265px;
+        border-radius: 10px;
+    }
+    
+    /* Animation */
+    @keyframes slide {
+        0% { transform: translateX(0%); }
+        33% { transform: translateX(0%); }
+        38% { transform: translateX(-100%); }
+        71% { transform: translateX(-100%); }
+        76% { transform: translateX(-200%); }
+        100% { transform: translateX(-200%); }
+    }
+    
+    
+    .carouselenfant{
+        display: flex;
+        width: 240px;
+        background-color: white;
+        border-radius: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-family: Comfortaa-Regular ;
+        font-size: 13px;
+        flex-direction: column;
+        box-shadow: -0px 0px 25px -10px white;
+    }
+    
+    .carouselenfant h1{
+        font-family: Chaney-Regular;
+    }
+    
+    .carousellink{
+        display: flex;
+        width: 240px;
+        background-color: #F6E9D5;
+        border-radius: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-family: Chaney-Wide ;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center; 
+        color: #EDD3AB;
+        text-align: center;
+        box-shadow: -0px 0px 25px -10px white;
+    }
+    
+    .carousellink a{
+        text-decoration: none;
+    }
+}

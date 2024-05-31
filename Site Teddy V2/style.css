@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Chaney-wide" ;
+    src: url(font/CHANEY-Wide.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Chaney-regular" ;
+    src: url(font/CHANEY-Regular.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Comfortaa-Regular" ;
+    src: url(font/Comfortaa-Regular.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: "Comfortaa-Light" ;
+    src: url(font/Comfortaa-Light.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: "Comfortaa-Bold" ;
+    src: url(font/Comfortaa-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Cooper" ;
+    src: url(font/COOPBL.TTF) format("truetype");
+}
+
+@font-face {
+    font-family: "Move" ;
+    src: url(font/MOVE\ GROOVY.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Bebas" ;
+    src: url(font/BebasNeue-Regular.ttf) format("truetype");
+}
+
+/* BARRE DE SCROLL */
+
+/* Largeur de la barre de défilement */
+::-webkit-scrollbar {
+    width: 7px; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Hauteur de la barre de défilement */
+::-webkit-scrollbar {
+    height: 7px; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Couleur de fond de la barre de défilement */
+::-webkit-scrollbar {
+    background-color: #101010; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Couleur de la piste (partie non défilante) de la barre de défilement */
+::-webkit-scrollbar-track {
+    background-color: #101010; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Couleur de la poignée (partie défilante) de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Arrondir les bords de la poignée de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+/* Défilement en hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #909090; /* Pour les navigateurs basés sur WebKit (Safari, Chrome, etc.) */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #090909;
+}
+
+.parentdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+}
+
+.div2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.div3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.div4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    align-items: center;
+}
+
+/* BULLE 1 */
+
+.profil {
+    background-color: #005E42;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: -0px 0px 25px -10px #005E42;
+}
+
+.profil h1{
+    color: #00AC79;
+    font-family: Chaney-regular;
+    font-size: 20px;
+}
+
+.profil p{
+    font-family: Comfortaa-Regular;
+    color: white;
+    font-size: 12px;
+}
+
+
+.profilTexte {
+    background-color: white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: -0px 0px 25px -10px white;
+}
+
+.profilTexte p{
+    font-family: Comfortaa-light;
+    color: #111111;
+    font-size: 12px;
+}
+
+.langue{
+    background-color: white;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
+    box-shadow: -0px 0px 25px -10px white;
+}
+
+.anglais{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.espagnole{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.langue p{
+    font-family: Comfortaa-Regular;
+    color: #111111;
+    font-size: 10px;
+}
+
+/* DIV 2 */
+
+.contacttitle{
+    background-color: #FDBF45;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    justify-content: space-between;
+    font-family: Cooper;
+    align-items: center;
+    color: #111111;
+    border-bottom: dotted #090909;
+    box-shadow: -0px 0px 25px -10px #FDBF45;
+}
+
+.contact{
+    background-color: #FDBF45;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: -0px 0px 25px -10px #FDBF45;
+}
+
+.contact p{
+    font-family: Comfortaa-Regular;
+    color: #111111;
+    font-size: 12px;
+}
+
+.contacttexte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.softskills{
+    background-color: #4085E7;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;
+    margin-top: 35px;
+    box-shadow: -0px 0px 25px -10px #4085E7;
+}
+
+.softskills hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #2E61AB, #2E61AB); /* Dégradé du rose à l'orange */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.softskillstitle{
+    font-family: Move;
+    display: flex;
+    justify-content: space-between;
+}
+
+.softskillstexte{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 10px;   
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Comfortaa-Regular;
+    font-size: 12px;
+}
+
+
+.parentcompetence{
+    background-color: #EB5A35;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;
+    margin-top: 35px;
+    box-shadow: -0px 0px 25px -10px #EB5A35;
+}
+
+.enfantcompetence{
+    font-family: Chaney-regular;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    color: #111111;
+}
+
+.competence{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* DIV 3 */
+
+
+.formations{
+    background-color: #FFB7D0;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;
+    box-shadow: -0px 0px 25px -10px #FFB7D0;
+    
+}
+
+.formations a {
+    text-decoration: none; /* Remove underline from the link */
+    color: #090909;
+}
+
+.formations hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #FA80B1, #FA80B1); /* Dégradé du rose à l'orange */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.formationstitle{
+    font-family: Bebas;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.formationstexte{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 25px;   
+}
+
+.formationsskills{
+    display: flex;
+    justify-content: space-between;
+    font-family: Comfortaa-Regular;
+    font-size: 12px;
+    flex-direction: column;
+    gap: 15px;  
+}
+
+.ecole{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+.experience{
+    background-color: #CF8D78;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;
+    margin-top: 35px;
+    box-shadow: -0px 0px 25px -10px #CF8D78;
+}
+
+.experience a {
+    text-decoration: none; /* Remove underline from the link */
+    color: #090909;
+}
+
+.experience hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #762D17, #762D17); /* Dégradé du rose à l'orange */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.experiencetitle{
+    font-family: Bebas;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.experiencetexte{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 25px;   
+}
+
+.experiencetexte hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #AE7765, #AE7765); /* Dégradé du rose à l'orange */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.experienceskills{
+    display: flex;
+    justify-content: space-between;
+    font-family: Comfortaa-Regular;
+    font-size: 12px;
+    flex-direction: column;
+    gap: 15px;  
+}
+
+.ecole{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* DIV 4 */
+
+.cvpapier{
+    background-color: white;
+    width: 250px;
+    border-radius: 15px;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 35px;
+    font-family: Chaney-Regular;
+    color: #090909;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: -0px 0px 25px -10px white;
+}
+
+a {
+    text-decoration: none; /* Remove underline from the link */
+}
+
+
+.parentreseau{
+    display: flex;
+    flex-direction: column;
+}
+
+.enfantreseau{
+    background-color: #005E42;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;
+    margin-top: 35px;
+    font-family: Chaney-Regular;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    box-shadow: -0px 0px 25px -10px #005E42;
+}
+
+.reseau{
+    background-color: #ffffff;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    justify-content: center;
+    gap: 32px;
+    box-shadow: -0px 0px 25px -10px white;
+}
+
+
+
+.clickable-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 35px;
+    border-radius: 15px;
+    box-shadow: -0px 0px 25px -10px white;
+    margin-bottom: 50px;
+}
+
+.clickable-div:hover {
+    transform: scale(1.05);
+}
+
+.clickable-div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* PAGE ACCUEIL */
+
+
+.parentaccueil{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090909; /* Add a background color to make the elements stand out */
+}
+
+
+.accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enfantaccueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.enfantaccueil a{
+    font-family: Chaney-Regular;
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 25px;
+}
+
+.enfantaccueil p{
+    font-family: Comfortaa-Regular;
+}
+
+.boutons{
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.cvenligne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    box-shadow: -0px 0px 25px -10px white;
+    font-family: Chaney-Regular;
+    color: #C5C5C5;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cvenligne:hover {
+    transform: scale(1.05);
+}
+
+.cvenligne{
+    font-size: 25px;
+}
+
+.malette{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    box-shadow: -0px 0px 25px -10px white;
+    font-family: Chaney-Regular;
+    color: #C5C5C5;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.malette:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* ADAPTATION */
+
+
+
+@media (min-width: 1280px) {
+    .parentdiv{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .div2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    
+    .div3{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    
+    .div4{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        align-items: center;
+    }
+
+    .formations {
+        background-color: #FFB7D0;
+        width: 350px;
+        display: flex;
+        border-radius: 15px;
+        padding: 15px;
+        flex-direction: column;
+        box-shadow: -0px 0px 25px -10px #FFB7D0;
+    }
+
+    .experience {
+        background-color: #CF8D78;
+        width: 350px;
+        display: flex;
+        border-radius: 15px;
+        padding: 15px;
+        flex-direction: column;
+        margin-top: 35px;
+        box-shadow: -0px 0px 25px -10px #CF8D78;
+    }
+
+    .experiencetexte {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+}
